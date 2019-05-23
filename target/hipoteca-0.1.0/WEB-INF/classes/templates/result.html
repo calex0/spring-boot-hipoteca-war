@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Calcula una cuota hipotecaria</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Cuota mensual</h1>
+	<tr><td>Cuota mensual: </td><td th:text="${hipoteca.cuota}"></td></tr>
+    
+    <p><a href="/hipoteca/form">Calcular otra cuota</a><p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Calcula una cuota hipotecaria</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+	<h1>Cálculo de cuota hipoteca</h1>
+    <form th:object="${hipoteca}" action="#" th:action="@{/form}" method="post">
+    <table>
+    <tr>
+    	 <td>Capital:</td>
+    	 <td><input type="text" th:field="*{capital}" /></td> 
+    </tr>
+    <tr>
+    	 <td>Interés: </td>
+    	 <td><input type="text" th:field="*{interes}" placeholder = "1.90"/></td> 
+    </tr>
+    <tr>	
+    	 <td>Años:</td>
+    	 <td><input type="text" th:field="*{anos}" /></td> 
+    <tr>
+    <tr>
+         <td><input type="submit" value="Calcular" /> <input type="reset" value="Borrar" /></td> 
+    </tr>
+    </table>
+    </form>
+</body>
+</html>
